@@ -1,0 +1,136 @@
+/*This is a CSS comment*/
+body{
+background-color: orange;
+margin: 15px;
+/*opacity: 0.5;*/
+
+
+}
+h1{
+color:red;
+text-align: center;
+font-family: arial;
+text-shadow: 5px 5px 5px #ffffff;
+}
+
+header{
+	background-color: gray;
+	font-size: 25px;
+	text-align:center;
+	color:blue;
+	padding:30px;
+	position: -webkit-sticky;
+	position:sticky;
+	top:0;
+}
+p{
+	color:green;
+}
+
+#welcome{
+	color:white;
+	text-align:center;
+}
+.intro{
+	color:purple;
+	text-decoration-line: underline;
+}
+
+nav{
+	padding:1%;
+	margin-bottom:1%
+}
+nav ul{
+	list-style-type: none;
+	text-align:center;
+}
+li{
+	display:inline;
+}
+
+li:nth-of-type(even)
+{
+	color:pink
+}
+
+.mobile{
+	opacity:0.5;
+}
+
+/*Responsive css rules*/
+@media screen and (max-width: 481px) and (min-width:300px)
+{
+	.mobile
+	{
+		display:none;
+	}
+}	
+
+@media screen and (max-width: 768px) and (min-width:482px)
+{
+	.mobile
+	{
+		display:inline;
+	}
+}	
+
+.grid
+{
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+/*table css rules*/
+table
+{
+	width:100%;
+}
+table, th, td{
+	
+	border:1px solid black;
+	border-collapse: collapse;
+
+}
+tr:nth-of-type(odd)
+{
+	background-color:blue;
+	color:white;
+}
+
+tr:hover:nth-of-type(odd) {
+background-color:gray;
+}
+
+/* css for transforms*/
+div
+{
+	background-color:blue;
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	position: relative;
+	animation-name: test;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	/*transition: width 5s;*/
+	/*transform: translate(100px, 100px);
+	transform: rotate(-76deg);
+	transform: scale(2, 2);*/
+	/*three D transformations
+	transform: rotateZ(100deg);*/
+	
+}
+
+@keyframes test{
+	0% {background-color:pink; left:0px; right:0px;}
+	25% {background-color:yellow; left:200px; right:200px;}
+	50% {background-color:black; left:200px; right:200px;}
+	75% {background-color:gray; left:400px; right:400px;}
+	100% {background-color:purple; left:0px; right:0px;}
+/*from {transform: rotate(0deg);}
+to	{transform: rotate(360deg);}*/
+}
+
+div:hover{
+	background-color: red;
+	width: 500px;
+}
